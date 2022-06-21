@@ -1,0 +1,10 @@
+{
+    "gameModes" : {
+        "KanjiN5": [
+            {"text": "winter", "img": "tempImg.png"}
+        ],
+        "KanjiN3": [
+            {"text": "winter", "img": "tempImg.png"}
+        ]
+    }
+}

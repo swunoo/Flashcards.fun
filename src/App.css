@@ -1,0 +1,115 @@
+
+
+.App {
+  --primary: #FFD166;
+  --secondary: #DD6031;
+  --accent: #235789;
+  --natural1: #323232;
+  --natural2: #ECE4B7;
+
+  margin: auto;
+  text-align: center;
+  height: 100vh;
+  width: min(100vw,62.5vh);
+  background-color: var(--primary);
+
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*----------*/
+
+
+.App header {
+  line-height: 1vmin;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  color: var(--accent);
+  font-size: 3.5vmin;
+  font-weight: 600;
+}
+
+.App footer {
+  font-size: 2vmin;
+  line-height: 0.5vmin;
+  position: fixed;
+  bottom: 0;
+  width: min(100vw,62.5vh);
+  padding: 0;
+  margin: 0;
+  background-color: var(--natural1);
+  color: var(--primary);
+}
+
+.App footer a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/*----------*/
+
+.statBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#gameMode {
+  font-size: 3vmin;
+  color: var(--accent);
+  font-weight: 600;
+  border:none;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+#gameMode:focus{
+  outline:none;
+}
+
+.eachStat {
+  display: flex;
+  align-items: center;
+  gap:2vmin;
+}
+.levelStat{
+  color: var(--accent);
+  font-weight: 500;
+}
+.statSvgs{
+  width:3.5vmin;
+  color: var(--accent);
+}
+
+/*----------*/
+
+.tutorialTxt {
+  color: var(--natural1);
+}
+
+.cardsBody {
+  display: flex;
+  padding:10px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.eachCard {
+  max-width:25%;
+  margin: 1vmin;
+  background-color: var(--secondary);
+}
+
+.eachCard img {
+  width: 100%;
+}
+.eachCard p {
+  line-height: 0.5vmin;
+  color: #fff;
+}

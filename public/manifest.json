@@ -1,0 +1,11 @@
+{
+  "short_name": "FDF",
+  "name": "Flashcards-dot-fun",
+  "icons": [
+    
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#FFD166",
+  "background_color": "#FFD166"
+}
