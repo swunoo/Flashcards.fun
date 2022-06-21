@@ -8,10 +8,10 @@ import { Cards } from './Cards';
 let data = {
   "gameModes" : {
       "Tutorial": {
-        "totalLevel": 1,
+        "totalLevel": 2,
         "levelData":[
           [{"text": "specialDataTutorial",
-          "tutorial": "how to play this game"}]
+          "msg": "how to play this game"}]
         ]
       },
       "KanjiN5": {
@@ -41,6 +41,9 @@ let data = {
             {"text": "winter5", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "4"},
             {"text": "winter6", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "5"},
           ],
+          [
+            {"text": "specialWinningMsg", "msg": "Congratuatations!"}
+          ]
         ]
       },
       "KanjiN3": {
@@ -55,6 +58,9 @@ let data = {
           [
             {"text": "winter", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "0"},
           ],
+          [
+            {"text": "specialWinningMsg", "msg": "Congratuatations!"}
+          ]
         ]
       },
   }
@@ -65,47 +71,56 @@ function App() {
   const [curMode, setCurMode] = useState('Tutorial');
   const [totalLevel, setTotalLevel] = useState(1);
   const [curLevel, setCurLevel] = useState(0);
-  const [cardData, setCardData] = useState(null);
+  const [cardData, setCardData] = useState([]);
   const [totalScore, setTotalScore] = useState(1);
   const [curScore, setCurScore] = useState(0);
-  const [gameStatus, setGameStatus] = useState(true);
+  const [accScore, setAccScore] = useState(0);
+  const [cardUpdate, setCardUpdate] = useState(true);
   
   const changeMode = function (mode) {
     setCurMode(mode);
   }
 
   const cardChosen = function (result) {
-    setCurScore((state) => {
-      return (result? state + result : 0)
+    setAccScore((state) => {
+      return (result? state + result : 0);
     });
+    setCurScore((state) => {
+      return (result? state + result : 0);
+    });
+    setCurLevel((state)=>{
+      return (result? state : 0);
+    })
   }
 
+
   useEffect(() => {
+    console.log(curScore, totalScore);
     setCurLevel((state) => {
-      return (curScore === totalScore+1? state + 1 : state)
+      return (curScore === totalScore? state + 1 : state)
+    });
+    setCurScore((state) => {
+      return (curScore === totalScore? 0 : state);
     })
   }, [curScore]);
 
   useEffect(() => {
-    setGameStatus(()=>{
-      return (curLevel === totalLevel
-            ? false : true);
+    setCurLevel(0);
+    setCardUpdate((state)=>{
+      return(!state);
     })
-  }, [curLevel]);
-
-  useEffect(()=>{
-    console.log('it changes');
-  }, [gameStatus]);
+    setTotalLevel(data.gameModes[curMode].totalLevel);
+  }, [curMode])
 
   useEffect(() => {
-    console.log(totalScore);
+    console.log(curLevel);
     setCardData(data.gameModes[curMode].levelData[curLevel]);
-    setTotalLevel(data.gameModes[curMode].totalLevel);
-  }, [curLevel, curMode])
+  }, [curLevel, cardUpdate])
 
   useEffect(() => { 
-    setTotalScore((state) => {
-      return (cardData ? (state + cardData.length - 1) : 0)
+    setTotalScore(() => {
+      console.log("cardDataLength", cardData.length);
+      return (cardData.length ? cardData.length : 0)
       });
   }, [cardData])
 
@@ -119,14 +134,12 @@ function App() {
         <PlayerStats 
           totalLevel = {totalLevel}
           level = {curLevel}
-          choices = {curScore}  
+          choices = {accScore}  
         />
       </div>
-      {gameStatus && 
-      (<Cards cardData = {cardData}
+      <Cards cardData = {cardData}
               correctChoice = {cardChosen}
-              totalScore = {totalScore}/>)}
-      {!gameStatus && (<div>congratz</div>)}
+            />
     </div>
   );
 }

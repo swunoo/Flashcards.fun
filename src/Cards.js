@@ -23,17 +23,24 @@ export function Cards (props) {
             cardArr = [];
         } else {
             cardArr.push(e.currentTarget.id);
-            if(cardArr.length === props.totalScore) cardArr = [];
+            if(cardArr.length === props.cardData.length) cardArr = [];
             props.correctChoice(true);
         }
     }
     
     const renderOnBody = function (cardData) {
-        if(cardData[0].text === 'specialDataTutorial'){
+        if(!cardData[0]) return;
+        else if(cardData[0].text === 'specialDataTutorial'){
             return (
                 <div className="tutorialTxt">
                     <h3>How to Play</h3>
-                    <p>{cardData[0].tutorial}</p>
+                    <p>{cardData[0].msg}</p>
+                </div>
+            )
+        } else if(cardData[0].text === 'specialWinningMsg'){
+            return (
+                <div className="winningTxt">
+                    <h3>{cardData[0].msg}</h3>
                 </div>
             )
         } else {
@@ -52,9 +59,7 @@ export function Cards (props) {
     }
     return (
         <div className="cardsBody">
-            {   props.cardData &&
-                renderOnBody(props.cardData)
-            }
+            {renderOnBody(props.cardData)}
         </div>
     )
 }

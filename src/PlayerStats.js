@@ -5,6 +5,7 @@ export function PlayerStats (props) {
     let curHiscore = localStorage.getItem('fdfHiscore') ? JSON.parse(localStorage.getItem('fdfHiscore')) : 0;
     const [hiScore, setHiScore] = useState(curHiscore);
     const [curScore, setCurScore] = useState(0);
+    const [levelBar, setLevelBar] = useState(<p></p>);
 
     useEffect(() => {
         setCurScore(() => {
@@ -12,10 +13,18 @@ export function PlayerStats (props) {
         })
     }, [props.choices])
 
+    useEffect(() => {
+        setLevelBar(() => {
+            return (
+                props.level < props.totalLevel ?
+                    <div>{props.level + 1}/{props.totalLevel}</div> : <div>Completed.</div>)
+        })
+    }, [props.level, props.totalLevel]);
+
     return (
         <>
             <p className="eachStat">
-                <span class="levelStat">Level:</span> {props.level + 1}/{props.totalLevel}
+                <span class="levelStat">Level:</span> {levelBar}
             </p>
             <p className="eachStat">
             <svg xmlns="http://www.w3.org/2000/svg" className="statSvgs" viewBox="0 0 20 20" fill="currentColor">
