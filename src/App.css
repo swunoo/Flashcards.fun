@@ -103,13 +103,25 @@
 .eachCard {
   max-width:25%;
   margin: 1vmin;
-  background-color: var(--secondary);
+  background-color: var(--natural2);
 }
 
-.eachCard img {
+.eachCard img, .winningTxt img {
   width: 100%;
 }
+
+.winningTxt {
+  color:var(--secondary);
+}
+
+.winningTxt img {
+  max-width:100px;
+}
+
 .eachCard p {
-  line-height: 0.5vmin;
   color: #fff;
+  background-color: var(--secondary);
+  height:25px;
+  margin: 0;
+  line-height: 25px;
 }

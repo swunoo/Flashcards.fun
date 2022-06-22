@@ -11,38 +11,42 @@ let data = {
         "totalLevel": 2,
         "levelData":[
           [{"text": "specialDataTutorial",
-          "msg": "how to play this game"}]
+          "msg": "Click all cards, but only once each.", "img": "./Images/sushiChar.png"}]
         ]
       },
       "KanjiN5": {
         "totalLevel": 3,
         "levelData":[
           [
-            {"text": "winter1", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "0"},
-            {"text": "winter2", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "1"},
-            {"text": "winter3", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "2"},
-            {"text": "winter4", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "3"},
-            {"text": "winter5", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "4"},
-            {"text": "winter6", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "5"},
+            {"text": "Yen", "img": "./Images/ansen.png", "index": "0"},
+            {"text": "Meet", "img": "./Images/au.png", "index": "1"},
+            {"text": "Old", "img": "./Images/chi.png", "index": "2"},
+            {"text": "Small", "img": "./Images/chisai.png", "index": "3"},
+            {"text": "Ground", "img": "./Images/do.png", "index": "4"}
           ],
           [
-            {"text": "winter1", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "0"},
-            {"text": "winter2", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "1"},
-            {"text": "winter3", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "2"},
-            {"text": "winter4", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "3"},
-            {"text": "winter5", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "4"},
-            {"text": "winter6", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "5"},
+            {"text": "Comfortable", "img": "./Images/en.png", "index": "0"},
+            {"text": "Enter", "img": "./Images/hairu.png", "index": "1"},
+            {"text": "Half", "img": "./Images/han.png", "index": "2"},
+            {"text": "Human", "img": "./Images/hito.png", "index": "3"},
+            {"text": "Hundred", "img": "./Images/hyaku.png", "index": "4"},
+            {"text": "Meet", "img": "./Images/au.png", "index": "5"},
+            {"text": "Small", "img": "./Images/chisai.png", "index": "6"}
           ],
           [
-            {"text": "winter1", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "0"},
-            {"text": "winter2", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "1"},
-            {"text": "winter3", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "2"},
-            {"text": "winter4", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "3"},
-            {"text": "winter5", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "4"},
-            {"text": "winter6", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "5"},
+            {"text": "Now", "img": "./Images/ima.png", "index": "0"},
+            {"text": "Yen", "img": "./Images/en.png", "index": "1"},
+            {"text": "Time", "img": "./Images/ji.png", "index": "2"},
+            {"text": "Form", "img": "./Images/kata.png", "index": "3"},
+            {"text": "Child", "img": "./Images/ko.png", "index": "4"},
+            {"text": "10,000", "img": "./Images/man.png", "index": "5"},
+            {"text": "Small", "img": "./Images/chi.png", "index": "6"},
+            {"text": "Right", "img": "./Images/migi.png", "index": "7"},
+            {"text": "Learn", "img": "./Images/manabu.png", "index": "8"},
+            {"text": "Human", "img": "./Images/hito.png", "index": "9"}
           ],
           [
-            {"text": "specialWinningMsg", "msg": "Congratuatations!"}
+            {"text": "specialWinningMsg", "msg": "おめでとう! お疲れ様です", "img": "./Images/sushiChar.png"}
           ]
         ]
       },
@@ -50,32 +54,45 @@ let data = {
         "totalLevel": 3,
         "levelData":[
           [
-            {"text": "winter", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "0"},
+            {"text": "進行中", "img": "./Images/sushiChar.png", "index": "0"}
           ],
           [
-            {"text": "winter", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "0"},
+            {"text": "進行中", "img": "./Images/sushiChar.png", "index": "0"}
           ],
           [
-            {"text": "winter", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "0"},
+            {"text": "進行中", "img": "./Images/sushiChar.png", "index": "0"}
           ],
           [
-            {"text": "specialWinningMsg", "msg": "Congratuatations!"}
+            {"text": "specialWinningMsg", "msg": "おめでとう! お疲れ様です", "img": "./Images/sushiChar.png"}
           ]
         ]
-      },
+      }
   }
-}
+};
+
+// HOW TO FETCH DATA IS STILL IN DISCOVERY
+// (async function () {
+//   await fetch('./data.json').then(res => res.json()).then(result => data = result);
+// })();
 
 function App() {
 
+  // Currently selected GameMode
   const [curMode, setCurMode] = useState('Tutorial');
+
+  // Current and Total levels (depends on gameMode)
   const [totalLevel, setTotalLevel] = useState(1);
   const [curLevel, setCurLevel] = useState(0);
+
+  // CardData - A set of cards according to current mode and level, CardUpdate - Toggles state to trigger useEffect and update cards.
   const [cardData, setCardData] = useState([]);
+  const [cardUpdate, setCardUpdate] = useState(true);
+
+
+  // Scores (total - necessary score to level up, current - current score in current level, accumulated - accumulatd score across levels)
   const [totalScore, setTotalScore] = useState(1);
   const [curScore, setCurScore] = useState(0);
   const [accScore, setAccScore] = useState(0);
-  const [cardUpdate, setCardUpdate] = useState(true);
   
   const changeMode = function (mode) {
     setCurMode(mode);
@@ -146,4 +163,3 @@ function App() {
 
 export default App;
 
-// await fetch('./data.json').then(res => res.json()).then(data => gameModes = data.gameModes);

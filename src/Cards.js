@@ -41,6 +41,7 @@ export function Cards (props) {
             return (
                 <div className="winningTxt">
                     <h3>{cardData[0].msg}</h3>
+                    <img src={require(`${cardData[0].img}`)}/>
                 </div>
             )
         } else {
@@ -49,7 +50,7 @@ export function Cards (props) {
                 shuffledArr.map(data => {
                     return (
                         <div className="eachCard" key={data.text} id={data.index} onClick={cardClicked}>
-                            <img src={data.img} alt={data.text} />
+                            <img src={require(`${data.img}`)} alt={data.text} />
                             <p>{data.text}</p>
                         </div>
                     )

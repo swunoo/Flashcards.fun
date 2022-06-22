@@ -1,10 +1,59 @@
 {
     "gameModes" : {
-        "KanjiN5": [
-            {"text": "winter", "img": "tempImg.png"}
-        ],
-        "KanjiN3": [
-            {"text": "winter", "img": "tempImg.png"}
-        ]
+        "Tutorial": {
+          "totalLevel": 2,
+          "levelData":[
+            [{"text": "specialDataTutorial",
+            "msg": "Click all cards, but only once each."}]
+          ]
+        },
+        "KanjiN5": {
+          "totalLevel": 3,
+          "levelData":[
+            [
+              {"text": "en - Yen", "img": "./Images/en.png", "index": "0"},
+              {"text": "hyaku - Hundred", "img": "./Images/hyaku.png", "index": "1"},
+              {"text": "ji - Time", "img": "./Images/ji.png", "index": "2"},
+              {"text": "kata - Form", "img": "./Images/kata.png", "index": "3"},
+              {"text": "sen - Thousand", "img": "./Images/sen.png", "index": "4"}
+            ],
+            [
+              {"text": "winter1", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "0"},
+              {"text": "winter2", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "1"},
+              {"text": "winter3", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "2"},
+              {"text": "winter4", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "3"},
+              {"text": "winter5", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "4"},
+              {"text": "winter6", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "5"}
+            ],
+            [
+              {"text": "winter1", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "0"},
+              {"text": "winter2", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "1"},
+              {"text": "winter3", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "2"},
+              {"text": "winter4", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "3"},
+              {"text": "winter5", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "4"},
+              {"text": "winter6", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "5"}
+            ],
+            [
+              {"text": "specialWinningMsg", "msg": "Congratuatations!"}
+            ]
+          ]
+        },
+        "KanjiN3": {
+          "totalLevel": 3,
+          "levelData":[
+            [
+              {"text": "winter", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "0"}
+            ],
+            [
+              {"text": "winter", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "0"}
+            ],
+            [
+              {"text": "winter", "img": "https://i.pinimg.com/originals/14/b0/2e/14b02ee5d505b1e7d36c4db03ec42c5c.jpg", "index": "0"}
+            ],
+            [
+              {"text": "specialWinningMsg", "msg": "Congratuatations!"}
+            ]
+          ]
+        }
     }
-}
+  }
